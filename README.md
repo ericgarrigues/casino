@@ -69,7 +69,7 @@ The complete pipeline is this one :
 
 The monitoring of the state of the gateway and the microservices behind it must be done :
 
-- inside the kubernetes cluster with the collected metrics to ensure that the autosaling policies (cpu,mem,requests/s) are working as expected.
+- inside the kubernetes cluster with the collected metrics to ensure that the autoscaling policies (cpu,mem,requests/s) are working as expected.
 - from recurrent api calls (HTTP/HTTPS) from an external source (pingdom,statuscake,datadog,...)
 - from application metrics and logs observation with an in house monitoring system or from a saas service (datadog,dynatrace,new relic,...) where the logs and metrics are forwarded.
 
@@ -82,7 +82,7 @@ Today, most application monitoring stacks are based on those 4 components :
 - A dashboard creation and presentation service
 - An alerting, scheduling and escalation policies service
 
-So for our application supervision i propose this stack
+So for our application supervision I propose this stack
 
 - **Prometheus** for the metrics and alerting definition
 - **ELK** stack (elasticsearch + logstash + kibana) for the logs
