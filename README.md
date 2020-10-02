@@ -93,7 +93,7 @@ So for our application supervision i propose this stack
 
 To ensure that new configuration changes of the API Gateway are not impacting all customers in case of implementation error, some **Blue/Green**, **canary** and **A/B** testing environments must be deployed in the kubernetes environment.
 
-The best way to do it for me is in at ingress controller level as you can :
+The best way to do it for me is at the ingress controller level as you can :
 
 - ensure that if a API Gateway is not responding anymore it will be invalidated and the traffic will stop being forwarded to it.
 - set a load-balancing traffic policy based on weight or load for Blue/Green and canary testing.
@@ -128,7 +128,7 @@ A/B testing is often used to test new features that will be activated but only f
 
 ![AB testing](./images/ab_testing.png)
 
-In our case we are both doing BLue/Green at the ingress level and A/B testing of a new feature (sending pokemons instead of poker cards) at the API Gateway level.
+In our case we are both doing Blue/Green at the ingress level and A/B testing of a new feature (sending pokemons instead of poker cards) at the API Gateway level.
 
 ### Performances profiling
 
