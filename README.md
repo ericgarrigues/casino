@@ -124,7 +124,7 @@ Once we are sure that the behavior for the new version is working as expected :
 
 ### A/B
 
-A/B testing is often used to test new features that will be activated but only for a **controlled subset** of the customers and the API Gateway is a great place to put apply it.
+A/B testing is often used to test new features that will be activated but only for a **controlled subset** of the customers and the API Gateway is a great place to apply it.
 
 ![AB testing](./images/ab_testing.png)
 
