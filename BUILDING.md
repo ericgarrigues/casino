@@ -116,7 +116,7 @@ Create service in the namespace :
 kubectl apply -f krakend-service.yaml
 ```
 
-And finally, we can add an **ingress** controller to expose and forward external traffic to the service.
+We will add an **ingress** controller to expose and forward external traffic to the service.
 
 ```yaml
 apiVersion: networking.k8s.io/v1
@@ -141,7 +141,7 @@ Command :
 kubectl apply -f krakend-ingress.yaml
 ```
 
-Finally, i've choosen to have minimum 3 replicas and maximum 10 (containers) of the app and set the autoscaling policy based on the requests per seconds.
+Finally, i've choosen to have minimum 3 replicas and maximum 10 (containers) of the app so we will set an autoscaling policy based on the requests per seconds.
 
 ```yaml
 apiVersion: autoscaling/v2beta2
