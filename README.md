@@ -128,7 +128,7 @@ A/B testing is often used to test new features that will be activated but only f
 
 ![AB testing](./images/ab_testing.png)
 
-In our case we are both doing BLue/Green at the ingress level and canary testing of a new feature (sending pokemons instead of poker cards) at the API Gateway level.
+In our case we are both doing BLue/Green at the ingress level and A/B testing of a new feature (sending pokemons instead of poker cards) at the API Gateway level.
 
 ### Performances profiling
 
